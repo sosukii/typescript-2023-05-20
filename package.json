@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-typescript": "^7.21.5",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "build:types": "tsc",
+    "build:js": "babel src --out-dir lib --extensions \".ts\" --source-maps inline",
+    "build": "npm run build:types && npm run build:js"
+  }
+}

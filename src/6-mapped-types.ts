@@ -57,29 +57,29 @@ interface Cat {
   volume: number;
 }
 
-class MyDog implements CompleteEntity<Dog> {
-  weight: number;
-  color: string;
-  name?: string | undefined;
-  getWeight: () => number;
-  getColor: () => string;
-  getName?: (() => string | undefined) | undefined;
-  setWeight: (value: number) => void;
-  setColor: (value: string) => void;
-  setName?: ((value: string | undefined) => void) | undefined;
-}
+// class MyDog implements CompleteEntity<Dog> {
+//   weight: number;
+//   color: string;
+//   name?: string | undefined;
+//   getWeight: () => number;
+//   getColor: () => string;
+//   getName?: (() => string | undefined) | undefined;
+//   setWeight: (value: number) => void;
+//   setColor: (value: string) => void;
+//   setName?: ((value: string | undefined) => void) | undefined;
+// }
 
-class MyCat implements CompleteEntity<Cat> {
-  color: string;
-  name: string;
-  volume: number;
-  getColor: () => string;
-  getName: () => string;
-  getVolume: () => number;
-  setColor: (value: string) => void;
-  setName: (value: string) => void;
-  setVolume: (value: number) => void;
-}
+// class MyCat implements CompleteEntity<Cat> {
+//   color: string;
+//   name: string;
+//   volume: number;
+//   getColor: () => string;
+//   getName: () => string;
+//   getVolume: () => number;
+//   setColor: (value: string) => void;
+//   setName: (value: string) => void;
+//   setVolume: (value: number) => void;
+// }
 
 function rerender() {}
 

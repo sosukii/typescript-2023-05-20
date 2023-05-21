@@ -54,6 +54,7 @@ const functionConst = (initialState: string = "Hello"): void => {};
 let fontWeight: 500 | 600 | 700 | "bold" = 600;
 let position: "absolute" = "absolute";
 let size: "s" | "m" | "l" = "m";
+
 let intersectionLet: string & number;
 
 function test(a: { a: string; c: boolean } | { b: number; c: string }) {
